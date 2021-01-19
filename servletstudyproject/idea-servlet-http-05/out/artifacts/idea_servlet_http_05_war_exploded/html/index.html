@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login page</title>
+</head>
+<body>
+    <!--下面中的连接是在form标签中输入相应用户名和密码跳转到某个页面-->
+    <!--这里输入用户名和密码只是个形式，不进行连接数据库匹配，只要点击登录login都能跳转-->
+    <!--这里只是test-->
+    <form action="/idea_servlet_http_05_war_exploded/system/hello" method="get">
+        <!--前面username是名字，输入内容是text类型，该内容是value，而key值是name中的username-->
+        username<input type="text" name="username"><br>
+        password<input type="password" name="password"><br>
+        <input type="submit" value="login">
+    </form>
+</body>
+</html>

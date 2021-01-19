@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+  version="4.0">
+    
+    <!--这是一个合法的web.xml文件-->
+    <!--一个webapp只有一个web.xml文件-->
+    <!--web.xml文件主要配置请求路径和实现Servlet的类名之间的绑定关系-->
+    <!--web.xml文件在Tomcat服务器启动阶段被解析-->
+    <!--web.xml文件解析失败，就会导致服务器启动失败-->
+    <!--web.xml文件的标签不能随便编写，Tomcat服务器早就知道该文件中需要编写的标签，该标签也是SUN制定的规范-->
+    <!--直接记住下面的个标签写法和含义-->
+    <servlet>
+        <!--下面这个servlet-name标签位置的名字随便起,但要与下面同一个标签名一致-->
+    	<servlet-name>helloServlet</servlet-name>
+        <!--下面这个servlet-class标签位置写的是项目中的类名-->
+        <servlet-class>PrintToClient</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <!--下面这个servlet-name标签位置的名字随便起,但要与上面同一个标签名一致-->
+        <servlet-name>helloServlet</servlet-name>
+        <!--下面这个url-pattern标签位置写的是请求路径，随意编写，但要以/开头，不用添加项目的名称-->
+        <!--该请求路径是虚拟的路径，只是代表一个资源的名称，就是上面类的代号-->
+        <url-pattern>/zzw</url-pattern>
+		<!--url-pattern标签还可以编写多个，但都得以/开头且不需要添加项目名-->
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+</web-app>

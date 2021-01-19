@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="idea-servlet-http-cookie-12:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/idea_servlet_http_cookie_12_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="idea-servlet-http-cookie-12/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="idea-servlet-http-cookie-12" />
+        </element>
+        <element id="library" level="application" name="mysql-connector-java-5.1.49-bin" />
+      </element>
+    </root>
+  </artifact>
+</component>

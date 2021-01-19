@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register page</title>
+</head>
+<body>
+    <form action="/idea-servlet-http-8/query" method="post">
+        用户名
+             <input type="text" name="username" >
+        <br>
+        密码
+            <input type="password" name="password">
+        <br>
+        性别
+            男<input type="radio" name="sex" value="f">
+            女<input type="radio" name="sex" value="m">
+        <br>
+        爱好
+            <input type="checkbox" name="hobby" value="sport">运动
+            <input type="checkbox" name="hobby" value="music">音乐
+            <input type="checkbox" name="hobby" value="dance">跳舞
+            <input type="checkbox" name="hobby" value="study">学习
+            <input type="checkbox" name="hobby" value="read">阅读
+        <br>
+        学历
+            <select name="grade">
+                <option value="primary">小学</option>
+                <option value="high">高中</option>
+                <option value="college">大学</option>
+            </select>
+        <br>
+        简历
+            <textarea rows="10" cols="60" name="introduce"></textarea>
+        <br>
+        <input type="submit" value="注册">
+        <input type="reset" value="重置">
+    </form>
+</body>
+</html>

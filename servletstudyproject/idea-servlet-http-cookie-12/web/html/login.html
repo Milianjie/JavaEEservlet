@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+</head>
+<body>
+    <form action="/idea-servlet-cookie/cookie/login" method="post">
+        用户名<input type="text" name="loginName"><br>
+        密  码<input type="password" name="loginPwd"><br>
+        <!--十天免登录选项-->
+        <input type="checkbox" name="TenDayAutoLoginFlag" value="ok">十天内免登录<br>
+        <input type="submit" value="LOGIN">
+    </form>
+</body>
+</html>
